@@ -5,6 +5,17 @@ Range, power consumption and data transfer performance tests in OpenThread over 
 
 The dual-core architecture of the STM32WB enables real-time execution of both application code and network-processing tasks.
 
+### Power Supply
+
+STM32WB require a VDD operating voltage supply between 1.71 V and 3.6 V.
+
+### Clock
+
+### RF 
+
+Micro F Socket UFL
+
+
 ## [OpenThread](https://openthread.io/)
 
 OpenThread is an open-source [Thread](https://www.threadgroup.org/) implementation released by Google.
