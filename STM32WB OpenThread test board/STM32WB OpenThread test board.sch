@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "STM32WB OpenThread Test Board"
-Date "2022-03-05"
-Rev "v0.0.1"
+Date "2022-04-03"
+Rev "v0.1.0"
 Comp "Sergiusz Warga"
 Comment1 ""
 Comment2 ""
@@ -93,7 +93,7 @@ U 1 1 622A9FE4
 P 3150 2100
 F 0 "J1" V 3387 2029 50  0000 C CNN
 F 1 "Conn_Coaxial" V 3296 2029 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 3150 2100 50  0001 C CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 3150 2100 50  0001 C CNN
 F 3 " ~" H 3150 2100 50  0001 C CNN
 	1    3150 2100
 	-1   0    0    -1  
@@ -232,9 +232,9 @@ L Switch:SW_Push SW1
 U 1 1 622BE53E
 P 4700 900
 F 0 "SW1" H 4700 1185 50  0000 C CNN
-F 1 "SW_Push" H 4700 1094 50  0000 C CNN
+F 1 "C&K KMR421NG LFS" H 4700 1094 50  0000 C CNN
 F 2 "" H 4700 1100 50  0001 C CNN
-F 3 "~" H 4700 1100 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/82270d8c9e16493c80bcc1a437fbde29/KMR2_series_DTE.pdf" H 4700 1100 50  0001 C CNN
 	1    4700 900 
 	1    0    0    -1  
 $EndComp
@@ -457,8 +457,6 @@ Wire Wire Line
 	5950 1400 6050 1400
 Wire Wire Line
 	5350 1400 5450 1400
-Wire Wire Line
-	5700 1400 5750 1400
 Connection ~ 5950 1400
 Connection ~ 5450 1400
 Wire Wire Line
@@ -467,12 +465,12 @@ Connection ~ 5550 1400
 Wire Wire Line
 	5550 1400 5650 1400
 Connection ~ 5650 1400
-Wire Wire Line
-	5650 1400 5700 1400
 Connection ~ 5750 1400
 Wire Wire Line
 	5750 1400 5850 1400
 Connection ~ 5850 1400
 Wire Wire Line
 	5850 1400 5950 1400
+Text Notes 3350 2350 0    50   ~ 0
+Think about Capacitor-Coil-Capacitor
 $EndSCHEMATC
